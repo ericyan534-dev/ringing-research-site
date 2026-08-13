@@ -481,7 +481,8 @@ var RR = (function () {
     return api.el("div", { class: "stack" },
       [api.el("div", { class: "btn-row" }, [button, copy]),
        api.el("p", { class: "small muted",
-                     text: "No GitHub account? Copy this and send it to Eric." }),
+                     text: "No GitHub account? Copy this and send it to whoever runs the "
+                           + "research system." }),
        area]);
   };
 
@@ -848,7 +849,8 @@ var RRViews = (function (core) {
          el("div", { class: "fact-meta" },
             [core.gradeChip(item.grade), core.sourceLink(item.source_url, "source"),
              ref ? null : el("span", { class: "muted",
-                                       text: "cannot be approved here — tell Eric" })])])])]);
+                                       text: "cannot be approved here — raise it with the "
+                                             + "research owner" })])])])]);
   }
 
   function approvals() {
